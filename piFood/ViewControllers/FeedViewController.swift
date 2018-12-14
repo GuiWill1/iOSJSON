@@ -88,6 +88,7 @@ class FeedViewController: UIViewController, UITableViewDelegate,  UITableViewDat
         let point = sender.convert(CGPoint.zero, to: tableView as UIView)
         let indexPath: IndexPath! = tableView.indexPathForRow(at:point)
        //let index : NSIndexPath =  self.indexPathForCellContainingView(view: sender, inTableView: tableView)
+        //let index : NSIndexPath =  self.indexPathForCellContainingView(view: sender, inTableView: tableView)
         let car = ItemCarrinho()
         total = Double(produtos[indexPath.row]._preco * sender.value)
         let tot = String(total)
